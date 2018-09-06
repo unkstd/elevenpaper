@@ -1,0 +1,117 @@
+article.post {
+	transition: all .3s ease-in-out;
+	border-radius: 15px;
+	grid-column-start: 1;
+	&:nth-of-type(3n+1) {
+		grid-column-end: two;
+	}
+	&:nth-of-type(3n+2) {
+		padding-right: 10px;
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+	&:nth-of-type(3n+3) {
+		padding-left: 10px;
+		grid-column-start: 3;
+		grid-column-end: four;
+	}
+	div.card {
+		border-radius: inherit;
+		height: 350px;
+		overflow: hidden;
+		transition: all .3s ease-in-out;
+		&:hover {
+    		transform: scale3d(1.01, 1.01, 1);
+			box-shadow: 0px 0px 102px 5px rgba(0,0,0,0.21);
+		}
+		width: 100%;
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+			cursor: pointer;
+			div.cardWrapper {
+				width: 100%;
+				height: 100%;
+				div.cardImgOverlay {
+					width: 100%;
+					height: 100%;
+					background: linear-gradient(to top, rgba(0,0,0,.5), rgba(0, 0, 0, 0) );
+				}
+				div.cardTitle {
+					bottom: 130px;
+					width: 90%;
+					margin: auto;
+					position: relative;
+					div.postInfo {
+						color: $color2;
+						display: block;
+						h2 {
+							font-size: 36px;
+							color: #fff;
+							font-weight: 600;
+							margin-bottom: 5px;
+						}
+						.timeOfUpdate {
+							display: block;
+							font-style: italic;
+							color: #ffffff;
+							font-size: 12px;
+							margin-bottom: 8px;
+							i {
+								color: white;
+							}
+						}
+						.postExcerpt {
+							font-size: 14px;
+							display: block;
+							p {
+								color: #ffffff;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1195px) {
+	.post {
+		&:nth-of-type(3n+1) {
+			grid-column-end: 5 !important;
+		}
+		&:nth-of-type(3n+2) {
+			grid-column-start: 1 !important;
+			padding: 0 !important;
+			grid-column-end: 5 !important;
+		}
+		&:nth-of-type(3n+3) {
+			grid-column-start: 1 !important;
+			padding: 0 !important;
+			grid-column-end: 5 !important;
+		}
+	}
+}
+
+@media screen and (max-width: 726px) {
+	article.post div.card a .cardWrapper .cardTitle {.postInfo h2 {font-size: 30px;}}
+}
+
+@media all and (max-width: 800px) {
+	article.post div.card {
+		background-size: cover !important;
+		height: 400px;
+		a .cardWrapper div.cardTitle {
+			bottom: 170px !important;
+		}
+	}
+}
+
+@media all and (max-width: 500px) {
+	article.post div.card {
+		a .cardWrapper div.cardTitle {
+			width: 85% !important;
+		}
+	}
+}

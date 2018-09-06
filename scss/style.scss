@@ -1,0 +1,80 @@
+/*
+Theme Name: Eleven paper
+Author: u
+Version: 1.0
+*/
+
+$color1: rgb(24,24,27);
+$color2: #fff;
+$blue: #58A4B0;
+
+* {
+	font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	color: $color1;
+}
+
+body {
+	margin: 0 auto;
+	background: $color2;
+	overflow-x: hidden;
+}
+
+::-webkit-input-placeholder {
+	color: $color1;
+}
+:-ms-input-placeholder {
+	color: $color1;
+}
+::-moz-input-placeholder {
+	color: $color1;
+}
+:-moz-input-placeholder {
+	color: $color1;
+}
+
+#progress {
+	width: 0%;
+	height: 3px;
+	position: fixed;
+	z-index: 457665764675664567465756435675464554675;
+	margin-top: -10px;
+	background: #1D976C;
+}
+
+.disable, #disable {display: none}
+
+.bodyContent {
+	min-height: 80vh;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition: transform 0.4s, opacity 0.4s;
+}
+
+.search-active, .menu-active {
+    transform: scale3d(0.98, 0.98, 1);
+	filter: blur(5px);
+	pointer-events: none;
+	overflow: hidden;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition: transform 0.4s, opacity 0.4s;
+	&::before {
+		content: '';
+		display: block;
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		background-color: rgba($color2, .5);
+	}
+}
+
+@import 'mixins/shadow-card';
+@import 'fa';
+@import 'blocks/mincomp';
+@import 'blocks/searchform';
+@import 'blocks/header';
+@import 'blocks/content';
+@import 'blocks/footer';
