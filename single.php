@@ -10,13 +10,10 @@
 							<?php if ( function_exists( 'wpsabox_author_box' ) ) echo wpsabox_author_box(); ?>
 						</span>
 						<span class="postpage-info-time">
-							<span>
-								<img src="<?php bloginfo('template_directory') ?>/img/icons/clock.svg" alt="Иконка часов">
-							</span>
-							<p><?php the_time('j F') ?></p>
+							<p><i class="far fa-clock"></i>  <?php the_time('j F') ?></p>
 						</span>
 					</div>
-					<section class="postpage-img" style="background: url(<?php echo get_the_post_thumbnail_url(); ?>);background-size: 100%;background-repeat: no-repeat;background-position: center;"></section>
+					<section class="postpage-img" style="background: url(<?php echo get_the_post_thumbnail_url(); ?>);background-size: cover;background-repeat: no-repeat;background-position: center;"></section>
 					<div class="postpage-content">
 						<?php the_content() ?>
 					</div>
@@ -26,7 +23,7 @@
 				</div>
 			<?php endwhile;
 		else:
-			echo '<h1>404<br>Ничего не найдено 🤷</h1>';
+			echo '<h1>Ничего не найдено 🤷</h1>';
 		endif;
 	?>
 </div>

@@ -16,6 +16,13 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
+	"\/404.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/404.php",
+		"oF": 0
+		},
 	"\/archive.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -184,26 +191,6 @@
 		"oA": 0,
 		"oAP": "\/img\/favicons\/site.webmanifest",
 		"oF": 0
-		},
-	"\/img\/icons\/clock.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/img\/icons\/clock.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/img\/icons\/menu.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/img\/icons\/menu.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
 		},
 	"\/img\/icons\/moon.svg": {
 		"ft": 2097152,
@@ -439,7 +426,7 @@
 		"uL": 1
 		},
 	"\/scss\/style.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
@@ -651,7 +638,7 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
-	"autoprefixerEnableIEGrid": 0,
+	"autoprefixerEnableIEGrid": 1,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,

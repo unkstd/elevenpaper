@@ -4,7 +4,7 @@
 		if (have_posts()):
 			while (have_posts()) : the_post(); ?>
 				<article class="post">
-					<div class="card" style="background: url(<?php echo get_the_post_thumbnail_url(); ?>);background-size: 100%;background-repeat: no-repeat;background-position: center;">
+					<div class="card" style="background: url(<?php echo get_the_post_thumbnail_url(); ?>);background-size: cover;background-repeat: no-repeat;background-position: center;">
 						<a href="<?php the_permalink(); ?>">
 							<div class="cardWrapper">
 								<div class="cardImgOverlay"></div>
@@ -21,7 +21,7 @@
 				</article>
 			<?php endwhile;
 		else:
-			echo '<h1>404<br>Ничего не найдено 🤷</h1>';
+			echo '<h1>Ничего не найдено 🤷</h1>';
 		endif;
 	?>
 </div>

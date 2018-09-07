@@ -59,9 +59,7 @@ header {
 					}
 				}
 			}
-			.disable {
-				display: none;
-			}
+			.disable {display: none;}
 		}
 	}
 	.menuButton {
@@ -96,13 +94,9 @@ header {
 			transform: scale3d(0.895, 0.895, 1);
 			box-shadow: none;
 		}
-		button {
-			span {
-				img {
-					width: 28%;
-					margin-right: 5px;
-				}
-			}
+		button span img { 
+			width: 28%;
+			margin-right: 5px;
 		}
 	}
 	.active-m {
@@ -127,11 +121,9 @@ ul.m-nav {
 	text-align: center;
 	padding-top: 100px;
 	transition: all .3s ease-in-out;
-	li {
-		a {
-			font-weight: 700;
-			font-size: 28px;
-		}
+	li a {
+		font-weight: 700;
+		font-size: 28px;
 	}
 }
 
@@ -145,9 +137,7 @@ ul.m-nav {
 }
 
 @media screen and (max-width: 600px) {
-	#progress {
-		margin-top: -56px;
-	}
+	#progress {margin-top: -56px;}
 }
 
 @media screen and (max-width: 785px) {
@@ -167,12 +157,8 @@ ul.m-nav {
 			margin: 0;
 			float: right;
 			justify-content: flex-start;
-			button {
-				span {
-					p {
-						display: none;
-					}
-				}
+			button span p {
+				display: none;
 			}
 		}
 		.menuButton, div.searchButton {
