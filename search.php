@@ -13,9 +13,8 @@
 							<div class="cardImgOverlay"></div>
 							<div class="cardTitle">
 								<div class="postInfo">
+									<span class="timeOfUpdate"><i class="fas fa-clock"></i> <?php the_modified_time('Y/m/d'); ?></span>
 									<h2><?php the_title(); ?></h2>
-									<span class="timeOfUpdate"><i class="fas fa-clock"></i> Дата изменения: <?php the_modified_time('Y-m-d'); ?></span>
-									<span class="postExcerpt"><?php the_excerpt(); ?></span>
 								</div>
 							</div>
 						</div>
@@ -24,7 +23,7 @@
 			</article>
 		<?php endwhile;
 		else:
-			echo '<h1>Ничего не найдено 🤷</h1>';
+			?> <h1 class="searchTitle">По запросу "<?php the_search_query(); ?>" ничего не найдено</h1> <?php
 		endif;
 	?>
 </div>

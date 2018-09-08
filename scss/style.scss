@@ -42,12 +42,11 @@ body {
 	height: 3px;
 	position: fixed;
 	z-index: 457665764675664567465756435675464554675;
-	margin-top: -10px;
-	background: #1D976C;
+	background: $blue;
 	box-sizing: border-box;
 }
 
-.disable, #disable {display: none}
+.disable, #disable {display: none !important}
 
 .bodyContent {
 	min-height: 80vh;

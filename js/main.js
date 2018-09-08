@@ -1,10 +1,12 @@
 $(document).ready(function() {
+
 	// Search Input
 	function searchInputOpen() {
 		$('.bodyContent').toggleClass('search-active')
 		$('.searchForm').removeClass('deactive-s');
 		$('#btn-search-max').addClass('disable');
 		$('#btn-search-min').addClass('disable');
+		$('.menuButton').addClass('disable');
 		$('#btn-search-close-max').removeClass('disable');
 		$('#btn-search-close-min').removeClass('disable');
 	}
@@ -13,6 +15,7 @@ $(document).ready(function() {
 		$('.searchForm').addClass('deactive-s');
 		$('#btn-search-max').removeClass('disable');
 		$('#btn-search-min').removeClass('disable');
+		$('.menuButton').removeClass('disable');
 		$('#btn-search-close-max').addClass('disable');
 		$('#btn-search-close-min').addClass('disable');
 	}
@@ -48,15 +51,17 @@ $(document).ready(function() {
 	}); */
 
 	$('#btn-menubar').click(function() {
-		$('.m-nav').removeClass('disable');
-		$('#btn-menubar').addClass('disable');
-		$('#btn-menu-close').removeClass('disable');
-		$('.bodyContent').toggleClass('search-active')
+		$('.m-nav').toggleClass('disable');
+		$('#btn-search-min').toggleClass('disable');
+		$('#btn-menubar').toggleClass('disable');
+		$('#btn-menu-close').toggleClass('disable');
+		$('.bodyContent').toggleClass('search-active');
 	});
 	$('#btn-menu-close').click(function() {
-		$('.m-nav').addClass('disable');
-		$('#btn-menubar').removeClass('disable');
-		$('#btn-menu-close').addClass('disable');
-		$('.bodyContent').toggleClass('search-active')
+		$('.m-nav').toggleClass('disable');
+		$('#btn-search-min').toggleClass('disable');
+		$('#btn-menubar').toggleClass('disable');
+		$('#btn-menu-close').toggleClass('disable');
+		$('.bodyContent').toggleClass('search-active');
 	});
 });

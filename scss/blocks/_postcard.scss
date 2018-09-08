@@ -9,11 +9,23 @@ article.post {
 		padding-right: 10px;
 		grid-column-start: 1;
 		grid-column-end: 3;
+		a div.cardWrapper .cardTitle {
+			bottom: 90px !important;
+			.postInfo h2 {
+				font-size: 31px !important;
+			}
+		}
 	}
 	&:nth-of-type(3n+3) {
 		padding-left: 10px;
 		grid-column-start: 3;
 		grid-column-end: four;
+		a div.cardWrapper .cardTitle {
+			bottom: 90px !important;
+			.postInfo h2 {
+				font-size: 31px !important;
+			}
+		}
 	}
 	div.card {
 		border-radius: inherit;
@@ -36,7 +48,7 @@ article.post {
 				div.cardImgOverlay {
 					width: 100%;
 					height: 100%;
-					background: linear-gradient(to top, rgba(0,0,0,.5), rgba(0, 0, 0, 0) );
+					background: linear-gradient(to top, rgba(0,0,0,.5), rgba(0, 0, 0, .1) );
 				}
 				div.cardTitle {
 					bottom: 130px;
@@ -95,19 +107,15 @@ article.post {
 }
 
 @media screen and (max-width: 726px) {
-	article.post div.card a .cardWrapper .cardTitle {.postInfo h2 {font-size: 30px;}}
-}
-
-@media all and (max-width: 800px) {
-	article.post div.card {
+	article.post div.card{
 		background-size: cover !important;
 		height: 400px;
-		a .cardWrapper div.cardTitle {
-			bottom: 170px !important;
+		a .cardWrapper .cardTitle {
+			bottom: 100px !important;
+			.postInfo h2 {font-size: 24px !important;}
 		}
 	}
 }
-
 @media all and (max-width: 500px) {
 	article.post div.card {
 		a .cardWrapper div.cardTitle {

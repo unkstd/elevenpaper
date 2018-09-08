@@ -35,13 +35,12 @@ body {
   height: 3px;
   position: fixed;
   z-index: 457665764675664567465756435675464554675;
-  margin-top: -10px;
-  background: #1D976C;
+  background: #58A4B0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
 .disable, #disable {
-  display: none; }
+  display: none !important; }
 
 .bodyContent {
   min-height: 80vh;
@@ -5085,6 +5084,16 @@ body {
     color: inherit;
     cursor: pointer; }
 
+#progress {
+  width: 0%;
+  height: 3px;
+  position: fixed;
+  margin-top: -10px;
+  z-index: 457665764675664567465756435675464554675;
+  background: #58A4B0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
 .searchForm {
   width: 100%;
   display: block;
@@ -5113,6 +5122,7 @@ body {
         font-size: 34px;
         line-height: 56px;
         color: #18181b;
+        background-color: rgba(255, 255, 255, 0.2) !important;
         border: none;
         border: 2px solid #18181b;
         border-radius: 8px;
@@ -5122,7 +5132,7 @@ body {
         transition: all .3s ease-in-out; }
         .searchForm .search-layer .searchform .searchform-inner input:focus {
           border: 2px solid rgba(24, 24, 27, 0.8);
-          background-color: #18181b;
+          background-color: #18181b !important;
           color: #fff;
           -webkit-transform: scale3d(0.985, 0.985, 1);
                   transform: scale3d(0.985, 0.985, 1);
@@ -5177,8 +5187,8 @@ header {
       position: relative;
       z-index: 4; }
       header ul.nav .searchButton button, header ul.nav .menuButton button, header ul.nav .modeButton button {
-        background: transparent;
-        border: 0;
+        background: none !important;
+        border: 0 !important;
         padding: 0;
         margin: 0;
         cursor: pointer; }
@@ -5192,20 +5202,17 @@ header {
           -webkit-box-align: center;
               -ms-flex-align: center;
                   align-items: center;
-          height: 100%; }
-          header ul.nav .searchButton button span p, header ul.nav .menuButton button span p, header ul.nav .modeButton button span p {
-            font-size: 16px;
-            font-weight: 600;
-            text-transform: uppercase;
-            padding-right: 8px; }
+          height: 100%;
+          font-size: 16px;
+          font-weight: 600;
+          text-transform: uppercase;
+          padding-right: 8px; }
           header ul.nav .searchButton button span i.fa, header ul.nav .menuButton button span i.fa, header ul.nav .modeButton button span i.fa {
-            margin-top: 0px;
+            padding-left: 3px;
             font-size: 14px; }
           header ul.nav .searchButton button span i.far, header ul.nav .menuButton button span i.far, header ul.nav .modeButton button span i.far {
-            margin-top: 0px;
+            padding-left: 3px;
             font-size: 20px; }
-      header ul.nav .searchButton .disable, header ul.nav .menuButton .disable, header ul.nav .modeButton .disable {
-        display: none; }
   header .menuButton {
     display: none;
     width: 32px;
@@ -5254,6 +5261,24 @@ header {
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     display: none;
     opacity: 0; }
+
+.mobileHeader {
+  z-index: 143543678765435678786574563452346374859687856 !important;
+  -webkit-box-shadow: 0px 1px 251px 25px rgba(0, 0, 0, 0.137);
+          box-shadow: 0px 1px 251px 25px rgba(0, 0, 0, 0.137);
+  width: 100%;
+  margin: 0;
+  height: 55px;
+  background-color: #58A4B0;
+  padding: 0 30px; }
+  .mobileHeader button span, .mobileHeader i {
+    color: #fff; }
+  .mobileHeader .logo {
+    background: url("img/logo/logo_white.svg") no-repeat center; }
+  .mobileHeader .nav li {
+    line-height: 55px; }
+    .mobileHeader .nav li a {
+      color: #fff; }
 
 .deactive {
   display: none;
@@ -5334,8 +5359,8 @@ ul.m-nav {
     -ms-grid-column: 1;
         grid-column-start: 1;
     grid-column-end: 4;
-    font-size: 2em;
-    margin-bottom: 30px; }
+    font-size: 2.5em;
+    margin-bottom: 20px; }
   .content article.post {
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
@@ -5349,11 +5374,19 @@ ul.m-nav {
       -ms-grid-column: 1;
           grid-column-start: 1;
       grid-column-end: 3; }
+      .content article.post:nth-of-type(3n+2) a div.cardWrapper .cardTitle {
+        bottom: 90px !important; }
+        .content article.post:nth-of-type(3n+2) a div.cardWrapper .cardTitle .postInfo h2 {
+          font-size: 31px !important; }
     .content article.post:nth-of-type(3n+3) {
       padding-left: 10px;
       -ms-grid-column: 3;
           grid-column-start: 3;
       grid-column-end: four; }
+      .content article.post:nth-of-type(3n+3) a div.cardWrapper .cardTitle {
+        bottom: 90px !important; }
+        .content article.post:nth-of-type(3n+3) a div.cardWrapper .cardTitle .postInfo h2 {
+          font-size: 31px !important; }
     .content article.post div.card {
       border-radius: inherit;
       height: 350px;
@@ -5377,8 +5410,8 @@ ul.m-nav {
           .content article.post div.card a div.cardWrapper div.cardImgOverlay {
             width: 100%;
             height: 100%;
-            background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(transparent));
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent); }
+            background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.1)));
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)); }
           .content article.post div.card a div.cardWrapper div.cardTitle {
             bottom: 130px;
             width: 90%;
@@ -5419,14 +5452,13 @@ ul.m-nav {
       padding: 0 !important;
       grid-column-end: 5 !important; } }
   @media screen and (max-width: 726px) {
-    .content article.post div.card a .cardWrapper .cardTitle .postInfo h2 {
-      font-size: 30px; } }
-  @media all and (max-width: 800px) {
     .content article.post div.card {
       background-size: cover !important;
       height: 400px; }
-      .content article.post div.card a .cardWrapper div.cardTitle {
-        bottom: 170px !important; } }
+      .content article.post div.card a .cardWrapper .cardTitle {
+        bottom: 100px !important; }
+        .content article.post div.card a .cardWrapper .cardTitle .postInfo h2 {
+          font-size: 24px !important; } }
   @media all and (max-width: 500px) {
     .content article.post div.card a .cardWrapper div.cardTitle {
       width: 85% !important; } }
@@ -5577,7 +5609,8 @@ ul.m-nav {
       width: 90%; } }
   @media screen and (max-width: 630px) {
     .content .postpage-content p {
-      font-size: 16px; }
+      font-size: 16px;
+      line-height: 26px; }
     .content .postpage-content .wp-block-cover-image {
       min-height: 300px; }
       .content .postpage-content .wp-block-cover-image p {
@@ -5598,7 +5631,9 @@ ul.m-nav {
           font-size: 14px; } }
   @media screen and (max-width: 542px) {
     .content .postpage-img {
-      height: 200px; } }
+      height: 200px; }
+    .content .postpage-content {
+      width: 100%; } }
   @media screen and (max-width: 480px) {
     .content .postpage-info {
       height: 46px; }

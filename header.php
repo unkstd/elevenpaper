@@ -15,7 +15,7 @@ function debug($str) {
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-	<title><?php bloginfo('name') ?></title>
+	<title><?php bloginfo('name'); wp_title("|"); ?></title>
 	<!-- Meta Info -->
 	<meta charset="<?php bloginfo('charset') ?>">
 	<meta name="viewport" content="width=device-width">
@@ -85,13 +85,13 @@ function debug($str) {
 			<li class="searchButton">
 				<button id="btn-search-max">
 					<span>
-						<p>Поиск</p>
+						Поиск
 						<i class="fa fa-search"></i>
 					</span>
 				</button>
 				<button id="btn-search-close-max" class="disable">
 					<span>
-						<p>Закрыть</p>
+						Закрыть
 						<i class="far fa-times"></i>
 					</span>
 				</button>
