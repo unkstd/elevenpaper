@@ -37,19 +37,13 @@ body {
 	color: $color1;
 }
 
-#progress {
-	width: 0%;
-	height: 3px;
-	position: fixed;
-	z-index: 457665764675664567465756435675464554675;
+::selection {
 	background: $blue;
-	box-sizing: border-box;
+	color: $color2;
+	text-shadow: none;
 }
 
-.disable, #disable {display: none !important}
-
 .bodyContent {
-	min-height: 80vh;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition: transform 0.4s, opacity 0.4s;
 }

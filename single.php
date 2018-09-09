@@ -18,7 +18,7 @@
 						<?php the_content() ?>
 					</div>
 					<div class="postpage-moreinfo">
-						Просмотров: 123000 <?php // do_action( 'pageviews' ); ?> ‧ <?php the_category( ', ', $post->ID ); ?>
+						Просмотров: <?php do_action( 'pageviews' ); ?> ‧ <?php the_category( ', ', $post->ID ); ?>
 					</div>
 				</div>
 			<?php endwhile;
