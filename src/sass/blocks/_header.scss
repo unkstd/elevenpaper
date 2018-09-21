@@ -5,7 +5,6 @@ header {
 	margin: 10px auto;
 	a.logo {
 		display: block;
-		background: url('img/logo/logo_black.svg') no-repeat center;
 		width: 170px;
 		height: 100%;
 		background-size: 100%;
@@ -103,33 +102,6 @@ header {
 	}
 }
 
-.mobileHeader {
-	z-index: 143543678765435678786574563452346374859687856 !important;
-	box-shadow: 0px 1px 251px 25px rgba(0, 0, 0, 0.137);
-	width: 100%;
-	margin: 0;
-	height: 55px;
-	background-color: $blue;
-	padding: 0 30px;
-	button span, i {
-		color: $color2;
-	}
-	.logo {
-		background: url('img/logo/logo_white.svg') no-repeat center;
-	}
-	.nav {
-		li {
-			line-height: 55px;
-			a {color: $color2;}
-		}
-	}
-}
-
-.deactive {
-	display: none;
-	opacity: 0;
-}
-
 ul.m-nav {
 	width: 100vw;
 	height: 100vh;
@@ -168,9 +140,7 @@ ul.m-nav {
 			text-align: center;
 			display: inline-block;
 		}
-		ul.nav {
-			display: none;
-		}
+		ul.nav {display: none;}
 		.searchButton {
 			width: 38px;
 			margin: 0;

@@ -23,11 +23,11 @@ function debug($str) {
 	<meta name="twitter:widgets:link-color" content="#55acee">
 	<meta name="twitter:widgets:border-color" content="#55acee">
 	<!-- Favicons -->
-	<link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_directory') ?>/img/favicons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('template_directory') ?>/img/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo('template_directory') ?>/img/favicons/favicon-16x16.png">
-	<link rel="manifest" href="<?php bloginfo('template_directory') ?>/img/favicons/site.webmanifest">
-	<link rel="mask-icon" href="<?php bloginfo('template_directory') ?>/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_directory') ?>/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('template_directory') ?>/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo('template_directory') ?>/favicons/favicon-16x16.png">
+	<link rel="manifest" href="<?php bloginfo('template_directory') ?>/favicons/site.webmanifest">
+	<link rel="mask-icon" href="<?php bloginfo('template_directory') ?>/favicons/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="apple-mobile-web-app-title" content="elevenpaper">
 	<meta name="application-name" content="elevenpaper">
 	<meta name="msapplication-TileColor" content="#00aba9">
@@ -68,19 +68,7 @@ function debug($str) {
 				</span>
 			</button>
 		 </div>
-		<a href="<?php echo home_url(); ?>" class="logo"></a>
-		<div class="modeButton">
-			<button id="btn-moon">
-				<span>
-					<img class="svg" src="<?php bloginfo('template_directory'); ?>/img/icons/moon.svg" alt="Кнопка поиска">
-				</span>
-			</button>
-			<button id="btn-sun" class="disable">
-				<span>
-					<img class="svg" src="<?php bloginfo('template_directory'); ?>/img/icons/sun.svg" alt="Кнопка для закрытия поиска">
-				</span>
-			</button>
-		</div>
+		<a href="<?php echo home_url(); ?>" class="logo" style="background: url('<?php bloginfo('template_directory') ?>/public/img/logo_black.svg') no-repeat center"></a>
 		<ul class="nav">
 			<li class="searchButton">
 				<button id="btn-search-max">

@@ -24,4 +24,26 @@
 	box-sizing: border-box;
 }
 
+.bodyContent {
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition: transform 0.4s, opacity 0.4s;
+}
+
+.search-active, .menu-active {
+    transform: scale3d(0.98, 0.98, 1);
+	filter: blur(5px);
+	pointer-events: none;
+	overflow: hidden;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition: transform 0.4s, opacity 0.4s;
+	&::before {
+		content: '';
+		display: block;
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		background-color: rgba($color2, .5);
+	}
+}
+
 .disable, #disable {display: none !important}
