@@ -10465,21 +10465,21 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // Search Input
 function searchInputOpen() {
     (0, _jquery2.default)('.bodyContent').toggleClass('search-active');
-    (0, _jquery2.default)('.searchForm').removeClass('deactive-s');
-    (0, _jquery2.default)('#btn-search-max').addClass('disable');
-    (0, _jquery2.default)('#btn-search-min').addClass('disable');
-    (0, _jquery2.default)('.menuButton').addClass('disable');
-    (0, _jquery2.default)('#btn-search-close-max').removeClass('disable');
-    (0, _jquery2.default)('#btn-search-close-min').removeClass('disable');
+    (0, _jquery2.default)('.searchForm').toggleClass('deactive-s');
+    (0, _jquery2.default)('#btn-search-max').toggleClass('disable');
+    (0, _jquery2.default)('#btn-search-min').toggleClass('disable');
+    (0, _jquery2.default)('.menuButton').toggleClass('disable');
+    (0, _jquery2.default)('#btn-search-close-max').toggleClass('disable');
+    (0, _jquery2.default)('#btn-search-close-min').toggleClass('disable');
 }
 function searchInputClose() {
     (0, _jquery2.default)('.bodyContent').toggleClass('search-active');
-    (0, _jquery2.default)('.searchForm').addClass('deactive-s');
-    (0, _jquery2.default)('#btn-search-max').removeClass('disable');
-    (0, _jquery2.default)('#btn-search-min').removeClass('disable');
-    (0, _jquery2.default)('.menuButton').removeClass('disable');
-    (0, _jquery2.default)('#btn-search-close-max').addClass('disable');
-    (0, _jquery2.default)('#btn-search-close-min').addClass('disable');
+    (0, _jquery2.default)('.searchForm').toggleClass('deactive-s');
+    (0, _jquery2.default)('#btn-search-max').toggleClass('disable');
+    (0, _jquery2.default)('#btn-search-min').toggleClass('disable');
+    (0, _jquery2.default)('.menuButton').toggleClass('disable');
+    (0, _jquery2.default)('#btn-search-close-max').toggleClass('disable');
+    (0, _jquery2.default)('#btn-search-close-min').toggleClass('disable');
 }
 (0, _jquery2.default)('#btn-search-max').click(searchInputOpen);
 (0, _jquery2.default)('#btn-search-min').click(searchInputOpen);

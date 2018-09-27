@@ -7,21 +7,21 @@ import './sass/style.scss'
 // Search Input
 function searchInputOpen() {
     $('.bodyContent').toggleClass('search-active')
-    $('.searchForm').removeClass('deactive-s');
-    $('#btn-search-max').addClass('disable');
-    $('#btn-search-min').addClass('disable');
-    $('.menuButton').addClass('disable');
-    $('#btn-search-close-max').removeClass('disable');
-    $('#btn-search-close-min').removeClass('disable');
+    $('.searchForm').toggleClass('deactive-s');
+    $('#btn-search-max').toggleClass('disable');
+    $('#btn-search-min').toggleClass('disable');
+    $('.menuButton').toggleClass('disable');
+    $('#btn-search-close-max').toggleClass('disable');
+    $('#btn-search-close-min').toggleClass('disable');
 }
 function searchInputClose() {
     $('.bodyContent').toggleClass('search-active')
-    $('.searchForm').addClass('deactive-s');
-    $('#btn-search-max').removeClass('disable');
-    $('#btn-search-min').removeClass('disable');
-    $('.menuButton').removeClass('disable');
-    $('#btn-search-close-max').addClass('disable');
-    $('#btn-search-close-min').addClass('disable');
+    $('.searchForm').toggleClass('deactive-s');
+    $('#btn-search-max').toggleClass('disable');
+    $('#btn-search-min').toggleClass('disable');
+    $('.menuButton').toggleClass('disable');
+    $('#btn-search-close-max').toggleClass('disable');
+    $('#btn-search-close-min').toggleClass('disable');
 }
 $('#btn-search-max').click(searchInputOpen);
 $('#btn-search-min').click(searchInputOpen);
