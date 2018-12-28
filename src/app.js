@@ -1,8 +1,5 @@
 import $ from 'jquery'
 import './sass/style.scss'
-//import './img/icons/moon.svg'
-//import './img/icons/sun.svg'
-//import './img/logo/logo_black.svg'
 
 // Search Input
 function searchInputOpen() {
@@ -43,17 +40,6 @@ $(window).scroll (function() {
     $('#progress').width(ratio + "%");
 });
 
-// Night Mode
-
-/* $('#btn-moon').click(function() {
-    $('#btn-moon').addClass('disable');
-    $('#btn-sun').removeClass('disable');
-});
-$('#btn-sun').click(function() {
-    $('#btn-moon').removeClass('disable');
-    $('#btn-sun').addClass('disable');
-}); */
-
 $('#btn-menubar').click(function() {
     $('.m-nav').toggleClass('disable');
     $('#btn-search-min').toggleClass('disable');
@@ -67,4 +53,18 @@ $('#btn-menu-close').click(function() {
     $('#btn-menubar').toggleClass('disable');
     $('#btn-menu-close').toggleClass('disable');
     $('.bodyContent').toggleClass('search-active');
+});
+
+// Fixed header
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 80) {
+    $('header').addClass("min");
+    $('.bodyContent').addClass("hd-min");
+    $('#progress').removeClass("disable");
+  } else {
+    $('header').removeClass("min", 200, "easeOut");
+    $('.bodyContent').removeClass("hd-min");
+    $('#progress').addClass("disable");
+  }
 });

@@ -17,11 +17,14 @@
 #progress {
 	width: 0%;
 	height: 3px;
-    position: fixed;
-    margin-top: -10px;
-	z-index: 457665764675664567465756435675464554675;
+  margin-top: 50px;
+  position: fixed;
+	z-index: 11 !important;
 	background: $blue;
 	box-sizing: border-box;
+  transition: .1s ease-out;
+  animation-name: hd-min;
+	animation-duration: .2s;
 }
 
 .bodyContent {
@@ -30,20 +33,20 @@
 }
 
 .search-active, .menu-active {
-    transform: scale3d(0.98, 0.98, 1);
+  transform: scale3d(0.98, 0.98, 1);
 	filter: blur(5px);
 	pointer-events: none;
-	overflow: hidden;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition: transform 0.4s, opacity 0.4s;
 	&::before {
 		content: '';
 		display: block;
 		position: fixed;
-		width: 100vw;
+		width: 110vw;
+    left: -100px;
 		height: 100vh;
 		background-color: rgba($color2, .5);
 	}
 }
 
-.disable, #disable {display: none !important}
+.disable, #disable {opacity: 0;display: none !important;}

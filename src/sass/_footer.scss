@@ -12,5 +12,18 @@ footer {
 		font-weight: 600;
 		font-size: 21px;
 		color: $color2;
+		font-family: 'Montserrat', sans-serif;
+	}
+	ul {
+		text-align: center;
+		padding-top: 10px;
+		li {
+			padding: 0 10px 0 0;
+			display: inline-block;
+			a {
+				font-family: 'Montserrat', sans-serif;
+				color: $color2;
+			}
+		}
 	}
 }

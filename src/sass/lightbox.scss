@@ -1,0 +1,25 @@
+#slb_viewer_wrap .slb_theme_slb_black .slb_container {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 8px 47px -13px rgba(0,0,0,0.61);
+  .slb_details {
+    display: none;
+  }
+  .slb_content {
+    .slb_controls {
+      position: absolute;
+      .slb_slideshow {
+        display: none;
+      }
+      .slb_close {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+}
+
+#slb_viewer_wrap .slb_theme_slb_baseline .slb_container {
+  padding: 0 !important;
+}

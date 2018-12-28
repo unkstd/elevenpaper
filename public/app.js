@@ -10458,10 +10458,6 @@ __webpack_require__(0);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-//import './img/icons/moon.svg'
-//import './img/icons/sun.svg'
-//import './img/logo/logo_black.svg'
-
 // Search Input
 function searchInputOpen() {
     (0, _jquery2.default)('.bodyContent').toggleClass('search-active');
@@ -10501,17 +10497,6 @@ function searchInputClose() {
     (0, _jquery2.default)('#progress').width(ratio + "%");
 });
 
-// Night Mode
-
-/* $('#btn-moon').click(function() {
-    $('#btn-moon').addClass('disable');
-    $('#btn-sun').removeClass('disable');
-});
-$('#btn-sun').click(function() {
-    $('#btn-moon').removeClass('disable');
-    $('#btn-sun').addClass('disable');
-}); */
-
 (0, _jquery2.default)('#btn-menubar').click(function () {
     (0, _jquery2.default)('.m-nav').toggleClass('disable');
     (0, _jquery2.default)('#btn-search-min').toggleClass('disable');
@@ -10525,6 +10510,20 @@ $('#btn-sun').click(function() {
     (0, _jquery2.default)('#btn-menubar').toggleClass('disable');
     (0, _jquery2.default)('#btn-menu-close').toggleClass('disable');
     (0, _jquery2.default)('.bodyContent').toggleClass('search-active');
+});
+
+// Fixed header
+
+(0, _jquery2.default)(window).scroll(function () {
+    if ((0, _jquery2.default)(window).scrollTop() > 80) {
+        (0, _jquery2.default)('header').addClass("min");
+        (0, _jquery2.default)('.bodyContent').addClass("hd-min");
+        (0, _jquery2.default)('#progress').removeClass("disable");
+    } else {
+        (0, _jquery2.default)('header').removeClass("min", 200, "easeOut");
+        (0, _jquery2.default)('.bodyContent').removeClass("hd-min");
+        (0, _jquery2.default)('#progress').addClass("disable");
+    }
 });
 
 /***/ })
