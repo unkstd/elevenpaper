@@ -5145,7 +5145,7 @@ header {
     height: 100%;
     float: left; }
     header .logo svg {
-      margin-top: 35px;
+      margin-top: 48px;
       transition: fill .2s ease-out; }
       header .logo svg:hover {
         fill: #58a4b0; }

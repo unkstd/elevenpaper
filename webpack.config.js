@@ -30,16 +30,16 @@ const config = {
 					presets: ['es2015']
 				}
 			},
-			{ 
-				test: /\.(png|jpg|jpeg|gif|svg)$/, 
-				loader: "url-loader?limit=100000" 
+			{
+				test: /\.(png|jpg|jpeg|gif|svg)$/,
+				loader: "url-loader?limit=100000"
 			},
-			{ 
-				test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
-				loader: "url-loader?limit=10000&minetype=application/font-woff" 
+			{
+				test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+				loader: "url-loader?limit=10000&minetype=application/font-woff"
 			},
-			{ 
-				test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
+			{
+				test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
 				use: [
 					{
 						loader: "file-loader",
@@ -56,7 +56,7 @@ const config = {
 	plugins: [
 		new ExtractTextPlugin('/[name].css'),
 		new BrowserSyncPlugin({
-		    proxy: 'elevenpaper.ru:8888',
+		    proxy: 'madeinvdonsk.ru:8888',
 		    port: 3000,
 		    files: [
 		        '**/*.php'
